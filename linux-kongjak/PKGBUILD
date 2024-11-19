@@ -3,8 +3,8 @@
 #
 
 pkgbase=linux-kongjak
-_tag=v6.11.9-kongjak
-pkgver=6.11.9.kongjak
+_tag=v6.12-kongjak
+pkgver=6.12.kongjak
 pkgrel=1
 pkgdesc="Linux Build by Kongjak"
 arch=(x86_64)
@@ -42,7 +42,7 @@ validpgpkeys=(
   647F28654894E3BD457199BE38DBBDC86092693E  # Greg Kroah-Hartman
   83BC8889351B5DEBBB68416EB8AC08600F108CDF  # Jan Alexander Steffens (heftig)
 )
-sha256sums=('51873f148e0db4c0db9cffe48e47df0551258e5c8ba6416ae8e13aa1b6903918')
+sha256sums=('6fdb53b5f817f42fb6b7ff00ba929c764bec8b7ded85bb79e262cf33784e3a30')
 
 export KBUILD_BUILD_HOST=archlinux
 export KBUILD_BUILD_USER=$pkgbase
@@ -53,7 +53,7 @@ prepare() {
 
   echo "Setting version..."
   echo "-$pkgrel" > localversion.10-pkgrel
-  echo "" > localversion.20-pkgname
+  echo "${pkgbase#linux}" > localversion.20-pkgname
 
   local src
   for src in "${source[@]}"; do
