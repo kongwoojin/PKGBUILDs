@@ -3,8 +3,8 @@
 #
 
 pkgbase=linux-kongjak
-_tag=v6.12-kongjak
-pkgver=6.12.kongjak
+_tag=v6.12.1-kongjak
+pkgver=6.12.1.kongjak
 pkgrel=1
 pkgdesc="Linux Build by Kongjak"
 arch=(x86_64)
@@ -42,7 +42,7 @@ validpgpkeys=(
   647F28654894E3BD457199BE38DBBDC86092693E  # Greg Kroah-Hartman
   83BC8889351B5DEBBB68416EB8AC08600F108CDF  # Jan Alexander Steffens (heftig)
 )
-sha256sums=('6fdb53b5f817f42fb6b7ff00ba929c764bec8b7ded85bb79e262cf33784e3a30')
+sha256sums=('cb68111c695e7041d265315225a59aa195096ccbd813baa0039022298499dc64')
 
 export KBUILD_BUILD_HOST=archlinux
 export KBUILD_BUILD_USER=$pkgbase
